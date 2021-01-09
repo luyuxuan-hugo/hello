@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main()
+{
+  printf("%c%c%c%c%c", getchar(), getchar(), getchar(), getchar(), getchar());
+    return 0;
+}
+//amazing,是堆栈的原理吗，后进先出
