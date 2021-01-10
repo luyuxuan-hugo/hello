@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include  <string.h>
+int main()
+{
+char str[20]={"luyuxuan-hugo"};
+strlwr(str);
+printf("%s",str);//strupr转大写
+return 0;
+}
