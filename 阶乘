@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>//求n！+（n-1）!+(n-2)!+ ……+2！+1! 
+using namespace std;
+int main()
+
+{
+    int n;
+    cin>>n;
+    int sum=0,sum1=1;
+    for(int i=1;i<=n;i++)
+    {
+    	sum1*=i;
+    	sum+=sum1;//可以另用一个for循环计算i! 再求和 
+    }
+    cout<<sum<<endl;
+	return 0;
+	
+	
+} 
