@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>//求n！+（n-1）!+(n-2)!+ ……+2！+1! 
+using namespace std;
+int str[100][100];
+int main()
+
+{
+    int n;
+    cin>>n;
+    
+    for(int i=0;i<n;i++)
+    {
+    	for(int j=0;j<n;j++)
+    	{
+    	if(j==0)
+    	{
+    		str[i][j]=1;
+    	}
+    	else{
+    		str[i][j]=str[i-1][j]+str[i-1][j-1];
+    	}
+    	}
+    }
+    for(int i=0;i<n;i++)
+    {
+    	for(int j=0;j<n;j++)
+    	{
+    	if(str[i][j]!=0)
+        printf("%d ",str[i][j]);
+    	}
+    	printf("\n");
+    }
+	return 0;
+} 
