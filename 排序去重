@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+int str[100];
+int main()
+{
+
+int n,n1;
+cin>>n;
+for(int i=0;i<n;i++){
+cin>>n1;
+for(int j=0;j<n1;j++){
+cin>>str[j];
+}
+sort(&str[0],&str[n1]);
+for(int k=0;k<n1;k++){
+if(str[k]<str[k+1]||str[k+1]==0)
+cout<<str[k];
+}
+}
+return 0;
+
+
+
+
+
+
+
+}
