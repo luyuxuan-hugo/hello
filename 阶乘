@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>//求n！+（n-1）!+(n-2)!+ ……+2！+1! 
+//复盘来了，期末居然考了这个 嘻嘻
 using namespace std;
 int main()
 
@@ -9,7 +10,9 @@ int main()
     for(int i=1;i<=n;i++)
     {
     	sum1*=i;
-    	sum+=sum1;//可以另用一个for循环计算i! 再求和 
+	//sum1%10000000 多少个0不记得了
+    	sum+=sum1;//可以另用一个for循环计算i! 再求和
+	//sum%10000000 
     }
     cout<<sum<<endl;
 	return 0;
